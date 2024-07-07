@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      .image {
+        min-width: 800px;
+        height: 500px;
+        object-fit: cover;
+      }
+      .slider {
+        transition: transform 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-[#927df1] flex items-center justify-center h-screen">
+    <div class="container flex items-center flex-col gap-8 justify-center">
+      <div class="top flex items-center">
+        <img
+          class="arrow left h-36 cursor-pointer"
+          src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+          alt=""
+        />
+        <div class="frame h-[500px] max-w-[800px] overflow-hidden">
+          <div class="slider flex">
+            <img
+              class="image"
+              src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              class="image"
+              src="https://images.unsplash.com/photo-1535638433172-69315f80caf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              class="image"
+              src="https://images.unsplash.com/photo-1468648746436-83fc69277650?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <img
+              class="image"
+              src="https://images.unsplash.com/photo-1514926948470-23f348c0307a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+        </div>
+        <img
+          class="arrow right h-36 cursor-pointer rotate-180"
+          src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+          alt=""
+        />
+      </div>
+      <div class="bottom flex gap-4">
+        <!-- <div
+          class="button rounded-full h-[15px] w-[15px] border-white border"
+        ></div>
+        <div
+          class="button rounded-full h-[15px] w-[15px] border-white border"
+        ></div>
+        <div
+          class="button rounded-full h-[15px] w-[15px] border-white border"
+        ></div>
+        <div
+          class="button rounded-full h-[15px] w-[15px] border-white border"
+        ></div> -->
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.pixabay.com/photo/2012/04/18/13/21/clouds-37009_640.png"
+      type="image/x-icon"
+    />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.3.2/dist/html2canvas.min.js"></script>
+  </head>
+  <body
+    class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"
+  >
+    <div
+      id="mainDiv"
+      class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg flex flex-col text-center justify-center gap-4 mb-6"
+    >
+      <h1 id="mainHeading" class="font-bold text-2xl underline text-center">
+        Weather Application
+      </h1>
+      <form
+        id="form"
+        class="w-full flex flex-col justify-center items-center gap-6"
+      >
+        <p id="heading3">
+          Enter Any City/State Name below and Click on "Get Latest Weather" to
+          get latest weather.
+        </p>
+        <input
+          id="userInput"
+          class="p-3 w-full border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+          type="text"
+          placeholder="Enter city name"
+        />
+        <button
+          id="searchBtn"
+          class="px-6 py-2 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+        >
+          Get Latest Weather
+        </button>
+        <button
+          id="backBtn"
+          class="px-6 py-2 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+          hidden
+        >
+          Go Back
+        </button>
+      </form>
+    </div>
+    <div
+      id="unhideDiv"
+      class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg flex flex-col text-center items-center justify-center mx-auto gap-4 w-[80%] md:w-[80%] max-w-[80%] hidden mb-6"
+    >
+      <img
+        id="rainy"
+        class="w-40 h-40 hidden"
+        src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs="
+        alt=""
+      />
+      <img
+        class="w-40 h-40 hidden"
+        src="https://cdn.pixabay.com/photo/2012/04/18/13/21/clouds-37009_640.png"
+        alt="Sunny"
+        id="sunny"
+      />
+      <p id="cityData"></p>
+      <p id="tempData"></p>
+      <p id="feelsLike"></p>
+      <p id="humidity"></p>
+      <p id="description"></p>
+      <div
+        id="loader"
+        class="spinner hidden border-4 border-gray-200 border-t-4 border-t-purple-500 h-12 w-12 rounded-full animate-spin"
+      ></div>
+      <p id="windSpeed"></p>
+      <p id="pressure"></p>
+      <form
+        id="form"
+        class="w-full flex flex-col justify-center items-center gap-6"
+      >
+        <button
+          id="backBtn"
+          class="px-6 py-2 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+        >
+          Go Back
+        </button>
+      </form>
+    </div>
+    <button
+      id="screenshotBtn"
+      class="px-6 py-2 bg-purple-500 border border-white text-white font-semibold rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+    >
+      Take Screenshot
+    </button>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

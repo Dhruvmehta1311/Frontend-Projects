@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>Dev Finder</title>
+  </head>
+  <body>
+    <div class="min-h-screen w-full p-1.5 bg-stone-100">
+      <div class="mx-auto flex w-full max-w-[550px] flex-col gap-8 rounded p-2">
+        <section class="flex justify-between gap-3">
+          <p class="text-xl font-semibold">devfinder</p>
+        </section>
+        <section class="flex flex-col gap-6">
+          <form
+            class="flex gap-8 items-center gap-2 w-full shadow-md p-2 rounded-lg bg-white"
+          >
+            <section class="flex items-center w-full h-full gap-2">
+              <i class="ri-search-2-line"></i>
+              <input
+                type="text"
+                placeholder="Enter Username here.."
+                id="userInfo"
+                class="w-full border rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
+              />
+            </section>
+            <button
+              id="search"
+              class="border border-gray-300 px-8 py-2 rounded-lg bg-blue-500 text-white"
+            >
+              Search
+            </button>
+          </form>
+
+          <main
+            class="flex flex-col w-full gap-5 rounded-lg bg-white min-h-[200px] py-8 px-4"
+          >
+            <section class="w-full flex gap-4">
+              <img
+                id="avatar"
+                class="rounded-full h-20 w-20"
+                src="https://avatars.githubusercontent.com/u/583231?v=4"
+                alt="Image"
+              />
+              <!-- class="flex flex-col justify-between gap-1 transition-all sm:w-full sm:flex-row" -->
+              <section
+                class="flex flex-col justify-between gap-1 sm:w-full sm:flex-row"
+              >
+                <div>
+                  <h1 id="name">The Octocat</h1>
+                  <a
+                    id="userLink"
+                    target="_blank"
+                    href="https://github.com/Dhruvmehta1311/"
+                    ><span
+                      class="text-blue-500 hover:underline text-sm transition-all font-mono"
+                      id="login"
+                      >@octocat</span
+                    ></a
+                  >
+                </div>
+                <p>
+                  <span class="font-mono opacity-60">Joined</span>
+                  <span class="font-mono opacity-60" id="created_at"
+                    >05 Feb 2022</span
+                  >
+                </p>
+              </section>
+            </section>
+            <p class="opacity-60" id="bio">This Profile has no bio..</p>
+            <section>
+              <div
+                class="flex justify-between gap-4 rounded-lg bg-stone-100 min-h-[50px]"
+              >
+                <div class="flex flex-col px-4 py-4">
+                  <p class="text-xs opacity-60">Repos</p>
+                  <p id="repoCount" class="text-sm font-bold sm:text-base">8</p>
+                </div>
+                <div class="flex flex-col px-4 py-4">
+                  <p class="text-xs opacity-60">Followers</p>
+                  <p id="followers" class="text-sm font-bold sm:text-base">
+                    1311
+                  </p>
+                </div>
+                <div class="flex flex-col px-4 py-4">
+                  <p class="text-xs opacity-60">Following</p>
+                  <p id="following" class="text-sm font-bold sm:text-base">8</p>
+                </div>
+              </div>
+              <div class="my-4 px-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div class="flex items-center gap-2">
+                  <i class="ri-map-pin-line"></i>
+                  <p id="location">San Francisco</p>
+                </div>
+                <div class="flex items-center gap-2 sm:justify-end">
+                  <i class="ri-link"></i>
+                  <a
+                    id="profileLink"
+                    class="hover:underline opacity-60 max-w-[220px]"
+                    href=""
+                    target="_blank"
+                    >Link to Profile.</a
+                  >
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="ri-twitter-fill"></i>
+                  <a target="_blank" id="twitter_username" href="">@twitter</a>
+                </div>
+                <div class="flex items-center gap-2 sm:justify-end sm:mx-14">
+                  <i class="ri-building-fill"></i>
+                  <p id="company">Finova</p>
+                </div>
+              </div>
+            </section>
+          </main>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

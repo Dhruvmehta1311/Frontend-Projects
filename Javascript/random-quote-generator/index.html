@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 flex items-center justify-center h-screen"
+  >
+    <div class="bg-white shadow-lg rounded-lg p-8 w-[90%] md:w-[40%]">
+      <div class="flex flex-col items-center gap-4">
+        <form id="nameForm" class="flex flex-col items-center gap-4 w-full">
+          <h2 id="enterName" class="text-xl font-bold">Enter Your Name:</h2>
+          <input
+            id="nameInput"
+            type="text"
+            class="border border-black px-6 py-2 rounded"
+          />
+          <button
+            id="nameBtn"
+            class="px-6 py-3 hover:bg-green-600 bg-green-500 rounded-md text-white transition duration-300"
+          >
+            Click Here
+          </button>
+        </form>
+        <span class="flex flex-col gap-4">
+          <h1
+            id="heading"
+            class="text-2xl font-bold text-gray-800 hidden capitalize text-center"
+          >
+            I am a Random Quote Generator.
+          </h1>
+          <h3
+            id="heading3"
+            class="font-semibold text-gray-600 text-center hidden"
+          >
+            Click on "Generate Random Quote" Button to have a random quote.
+          </h3>
+        </span>
+        <form
+          id="quoteForm"
+          class="flex flex-col items-center w-full gap-4 hidden"
+        >
+          <p id="quotePara" class="text-lg text-center text-gray-600"></p>
+          <button
+            id="quoteBtn"
+            class="px-6 py-3 hover:bg-green-600 bg-green-500 rounded-md text-white transition duration-300"
+          >
+            Generate Random Quote
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="quotes.js"></script>
+  </body>
+</html>
