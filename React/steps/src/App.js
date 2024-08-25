@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 
 const messages = [
   "Learn React ⚛️",
@@ -10,7 +12,7 @@ export default function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
-  console.log(messages.length);
+  // console.log(messages.length);
   function handlePrevious() {
     if (step > 1) setStep((s) => s - 1);
   }
@@ -21,15 +23,19 @@ export default function App() {
     }
   }
   return (
-    <div className="h-screen text-white bg-light-gray flex items-center justify-center flex-col relative">
-      <p
-        onClick={() => {
-          setIsOpen((checkIsOpen) => !checkIsOpen);
-        }}
-        className="absolute top-[23%] text-black text-right w-[600px] max-w-[90%] text-3xl cursor-pointer"
-      >
-        &times;
-      </p>
+    <div className="h-screen text-white bg-light-gray flex items-center justify-center flex-col ">
+      <div className="flex justify-center items-center text-center max-w-[600px] w-[90%] ">
+        <div className="w-full flex justify-end items-center">
+          <p
+            onClick={() => {
+              setIsOpen((checkIsOpen) => !checkIsOpen);
+            }}
+            className="text-black text-3xl cursor-pointer"
+          >
+            {isOpen ? <RxCross2 /> : <MdOutlineMenu />}
+          </p>
+        </div>
+      </div>
       {isOpen && (
         <div className="p-12 w-[600px] max-w-[90%] h-fit flex flex-col gap-8 items-center justify-between bg-zinc-200">
           <div className="flex items-center justify-between w-full text-black ">
@@ -55,30 +61,40 @@ export default function App() {
               3
             </div>
           </div>
-          <h1 className="font-semibold text-lg text-black">
-            Step {step} : {messages[step - 1]}
-          </h1>
+          <StepMessage step={step}>{messages[step - 1]}</StepMessage>
+
           <div className="flex items-center justify-between w-full">
-            <button
-              style={{ backgroundColor: "#7950f2" }}
-              className="font-semibold text-sm px-3 py-2 rounded-md"
-              onClick={handlePrevious}
-              // onMouseEnter={() => {
-              //   alert("Mouse has Entered.");
-              // }}
-            >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#7950f2" }}
-              className="font-semibold text-sm px-3 py-2 rounded-md"
-              onClick={handleNext}
-            >
-              Next
-            </button>
+            <Button bgColor="{#7950f2" onClick={handlePrevious}>
+              👈 Previous
+            </Button>
+            <Button bgColor="#7950f2" onClick={handleNext}>
+              Next 👉
+            </Button>
           </div>
         </div>
       )}
     </div>
+  );
+}
+
+function StepMessage({ step, children }) {
+  return (
+    <div>
+      <h1 className="font-semibold text-lg text-black">
+        Step {step}: {children}
+      </h1>
+    </div>
+  );
+}
+
+function Button({ onClick, children }) {
+  return (
+    <button
+      style={{ backgroundColor: "#7950f2" }}
+      className="font-semibold text-sm px-3 py-2 rounded-md"
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 }

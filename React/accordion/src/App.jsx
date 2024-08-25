@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 const faqs = [
@@ -20,21 +21,30 @@ function App() {
 }
 
 function Accordion({ data }) {
+  const [curOpen, setCurOpen] = useState(null);
+
   return (
     // <AccordianComponent />
     <div className="min-h-screen bg-blue-200 gap-4 py-7 flex flex-col items-center justify-center">
       {data.map((el, i) => (
-        <AccordionComponent title={el.title} key={i} index={i} text={el.text} />
+        <AccordionComponent
+          setCurOpen={setCurOpen}
+          curOpen={curOpen}
+          title={el.title}
+          key={i}
+          index={i}
+          text={el.text}
+        />
       ))}
     </div>
   );
 }
 
-function AccordionComponent({ title, text, index }) {
-  const [isOpen, setIsOpen] = useState(false);
+function AccordionComponent({ title, text, index, curOpen, setCurOpen }) {
+  const isOpen = curOpen === index;
 
   function handleIsOpen() {
-    setIsOpen((isOpen) => !isOpen);
+    setCurOpen(isOpen ? null : index);
   }
 
   return (
