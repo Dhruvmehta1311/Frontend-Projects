@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Image Text Extractor</title>
+    <style>
+      body {
+        font-family: "Josefin Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="">
+    <div
+      class="flex min-h-screen p-6 bg-zinc-950 text-black items-center justify-center"
+    >
+      <section
+        class="bg-stone-200 max-w-[550px] mx-auto p-6 rounded-md flex flex-col gap-2 items-center justify-center"
+      >
+        <h1 class="font-semibold text-xl">Upload an Image to Extract Text</h1>
+        <div
+          class="w-full flex flex-col items-center justify-center gap-2 pt-4"
+        >
+          <img
+            id="image"
+            src=""
+            alt="Uploaded Image"
+            class="hidden h-[300px]"
+          />
+          <input
+            class="text-sm"
+            type="file"
+            id="fileInput"
+            accept="image/*"
+            hidden
+          />
+          <label
+            class="bg-black px-4 py-2 text-white rounded-md cursor-pointer"
+            for="fileInput"
+            >Choose File</label
+          >
+        </div>
+        <br /><br />
+        <div class="text-left w-full">
+          <p class="">Text in Above Image is:</p>
+        </div>
+        <div class="w-full">
+          <textarea
+            class="p-4 w-full bg-white max-w-full text-gray-600 min-h-[250px]"
+            id="text"
+            disabled
+          ></textarea>
+        </div>
+        <div class="flex items-center justify-center w-full">
+          <button
+            id="copyBtn"
+            class="text-white bg-black px-4 outline-none rounded-md py-2"
+          >
+            Copy Text
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
