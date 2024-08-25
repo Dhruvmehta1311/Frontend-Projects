@@ -6,22 +6,22 @@ This repository is a collection of small to medium frontend projects organized b
 
 - **[BMI Calculator](./Javascript/BMI-Calculator)**: A simple tool to calculate Body Mass Index.
 - **[Digital Clock](./Javascript/Digital-Clock)**: Displays the time in a digital format.
-- **[Number Guessing Game](./JavaScript/number-guessing-game)**: A fun game that challenges users to guess a randomly generated number.
-- **[Weather App](./JavaScript/weather-app)**: Fetches and displays weather data based on user location.
-- **[Animated Navigation](./JavaScript/animated-navigation)**: A navigation menu with animated effects.
-- **[Custom Countdown](./JavaScript/custom-countdown)**: Allows users to set a custom countdown timer.
-- **[Dad Jokes Generator](./JavaScript/dad-jokes-generator)**: Fetch random dad jokes from an API.
-- **[Dev Finder](./JavaScript/dev-finder)**: A tool to find developer profiles based on user inputs.
-- **[Image Search](./JavaScript/image-search)**: Search and display images using an API.
-- **[Image Slider](./JavaScript/image-slider)**: A carousel slider for images.
-- **[Infinity Scroll](./JavaScript/infinity-scroll)**: Implement infinite scrolling functionality.
-- **[Joke Teller](./JavaScript/joke-teller)**: Tells random jokes fetched from an API.
-- **[Picture-in-Picture](./JavaScript/picture-in-picture)**: Allows users to create a picture-in-picture effect on their screen.
-- **[Quote Generator](./JavaScript/quote-generator)**: Display random quotes.
-- **[Random Quote Generator](./JavaScript/random-quote-generator)**: Another variant of a random quote display.
-- **[Shopping List](./JavaScript/shopping-list)**: A simple app to manage a shopping list.
-- **[Weather Application](./JavaScript/weather-application)**: Another variant of a weather displaying app.
-- **[Text Extractor](./JavaScript/text-extractor)**: A simple web application built with JavaScript which extracts the text from images.
+- **[Number Guessing Game](./Javascript/Number-Guessing-Game)**: A fun game that challenges users to guess a randomly generated number.
+- **[Weather App](./Javascript/Weather-App)**: Fetches and displays weather data based on user location.
+- **[Animated Navigation](./Javascript/animated-navigation)**: A navigation menu with animated effects.
+- **[Custom Countdown](./Javascript/custom-countdown)**: Allows users to set a custom countdown timer.
+- **[Dad Jokes Generator](./Javascript/dad-jokes-generator)**: Fetch random dad jokes from an API.
+- **[Dev Finder](./Javascript/dev-finder)**: A tool to find developer profiles based on user inputs.
+- **[Image Search](./Javascript/image-search)**: Search and display images using an API.
+- **[Image Slider](./Javascript/image-slider)**: A carousel slider for images.
+- **[Infinity Scroll](./Javascript/infinity-scroll)**: Implement infinite scrolling functionality.
+- **[Joke Teller](./Javascript/joke-teller)**: Tells random jokes fetched from an API.
+- **[Picture-in-Picture](./Javascript/picture-in-picture)**: Allows users to create a picture-in-picture effect on their screen.
+- **[Quote Generator](./Javascript/quote-generator)**: Display random quotes.
+- **[Random Quote Generator](./Javascript/random-quote-generator)**: Another variant of a random quote display.
+- **[Shopping List](./Javascript/shopping-list)**: A simple app to manage a shopping list.
+- **[Weather Application](./Javascript/weather-application)**: Another variant of a weather displaying app.
+- **[Text Extractor](./Javascript/text-extractor)**: A simple web application built with Javascript which extracts the text from images.
 
 ## [Tailwind Projects](./TailwindCSS/readme.md)
 
