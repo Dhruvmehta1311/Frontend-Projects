@@ -23,7 +23,7 @@ This repository is a collection of small to medium frontend projects organized b
 - **[Weather Application](./JavaScript/weather-application)**: Another variant of a weather displaying app.
 - **[Text Extractor](./JavaScript/text-extractor)**: A simple web application built with JavaScript which extracts the text from images.
 
-## Tailwind Projects
+## [Tailwind Projects](./TailwindCSS/readme.md)
 
 - **Email Subscribe**: A simple email subscription form. [Explore](.\TailwindCSS\email-subscribe)
 - **Fylo Landing Page**: A landing page for a fictional company. [Explore](.\TailwindCSS\fylo-landing-page)
