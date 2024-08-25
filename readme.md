@@ -2,7 +2,7 @@
 
 This repository is a collection of small to medium frontend projects organized by technology: JavaScript, Tailwind CSS, and React. Each project demonstrates different aspects of frontend development, from simple scripts to complex UI components.
 
-## JavaScript Projects
+## [JavaScript Projects](./Javascript/readme.md)
 
 - **[BMI Calculator](./JavaScript/bmi-calculator)**: A simple tool to calculate Body Mass Index.
 - **[Digital Clock](./JavaScript/digital-clock)**: Displays the time in a digital format.
