@@ -21,6 +21,7 @@ This repository is a collection of small to medium frontend projects organized b
 - **Random Quote Generator**: Another variant of a random quote display.
 - **Shopping List**: A simple app to manage a shopping list.
 - **Weather Application**: Another variant of a weather displaying app.
+- **Text Extractor**: A Simple Web Application Built with Javascript which extracts the text from image.
 
 ## Tailwind CSS Projects
 
@@ -34,6 +35,20 @@ This repository is a collection of small to medium frontend projects organized b
 - **Pizza Menu**: A dynamic pizza menu created with React.
 - **Profile Card**: A simple profile card implemented in React.
 - **Spotify Clone**: A clone of the Spotify interface using React.
+- **Accordion**: A Simple Accordion Built Using ReactJS and TailwindCSS which opens one accordion at a time.
+- **Advice Generator**: A Simple Application which fetches a quote from API and displays the Quote in UI. Built with TailwindCSS and ReactJS.
+- **Clipboard Landing Page**: A Simple but get good looking landing page. This was a challenge from Frontend Mentor.
+- **FAQ Accordion**: Simple but yet Elegent Looking Accordion which can be used in your website. This was a challenge from Frontend Mentor.
+- **Flashcards**: Practice Project Built in React which reveals the card when we click on it.
+  **Profile Card**: Practice Project Using React. This will test your knowledge of Props.
+- **Product Card Preview**: Another Practice Project Built with ReactJS and TailwindCSS. It tests your UI skillset.
+- **React Toast**: A Sample Application which shows different type of Toasts. It uses library `toastify-react`.
+- **Steps**: Ever saw different steps while ordering food or doing payment? This is a steps app which shows different steps where you can move forward and backward.
+- **Steps Counter**: This is an advance version of Counter. It increases the value of steps depending on counter. This tests your knowledge of useState hook.
+- **Tip Calculator**: A Beautiful Application Built with ReactJS and TailwindCSS. This is highly customisable application. This was a part of Frontend Mentor Challenge.
+- **Tip Calculato V2r**: This was a Practice Project where we have built a responsive navbar with tip calculator v2.
+- **Todo App**: Yet Another Todo App but with beautiful UI and also it has a theme switcher where you can change your theme to dark mode or light mode.
+- **Travel List**: Ever tried to make a list of things you want on a trip? Now with this application you can simply add your items that you want to pack. You can update them and also delete them.
 
 ## Technologies
 
