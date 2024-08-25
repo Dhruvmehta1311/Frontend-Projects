@@ -4,7 +4,7 @@ This repository is a collection of small to medium frontend projects organized b
 
 ## [JavaScript Projects](./Javascript/readme.md)
 
-- **[BMI Calculator](./Javascript/bmi-calculator)**: A simple tool to calculate Body Mass Index.
+- **[BMI Calculator](./Javascript/BMI-Calculator)**: A simple tool to calculate Body Mass Index.
 - **[Digital Clock](./JavaScript/digital-clock)**: Displays the time in a digital format.
 - **[Number Guessing Game](./JavaScript/number-guessing-game)**: A fun game that challenges users to guess a randomly generated number.
 - **[Weather App](./JavaScript/weather-app)**: Fetches and displays weather data based on user location.
