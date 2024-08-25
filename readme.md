@@ -4,6 +4,9 @@ This repository is a collection of small to medium frontend projects organized b
 
 ## [JavaScript Projects](./Javascript/readme.md)
 
+<details>
+<summary>Click to expand</summary>
+
 - **[BMI Calculator](./Javascript/BMI-Calculator)**: A simple tool to calculate Body Mass Index.
 - **[Digital Clock](./Javascript/Digital-Clock)**: Displays the time in a digital format.
 - **[Number Guessing Game](./Javascript/Number-Guessing-Game)**: A fun game that challenges users to guess a randomly generated number.
@@ -21,16 +24,26 @@ This repository is a collection of small to medium frontend projects organized b
 - **[Random Quote Generator](./Javascript/random-quote-generator)**: Another variant of a random quote display.
 - **[Shopping List](./Javascript/shopping-list)**: A simple app to manage a shopping list.
 - **[Weather Application](./Javascript/weather-application)**: Another variant of a weather displaying app.
-- **[Text Extractor](./Javascript/text-extractor)**: A simple web application built with Javascript which extracts the text from images.
+- **[Text Extractor](./Javascript/text-extractor)**: A simple web application built with JavaScript which extracts the text from images.
+
+</details>
 
 ## [Tailwind Projects](./TailwindCSS/readme.md)
 
-- **Email Subscribe**: A simple email subscription form. [Explore](.\TailwindCSS\email-subscribe)
-- **Fylo Landing Page**: A landing page for a fictional company. [Explore](.\TailwindCSS\fylo-landing-page)
-- **Recipe Page**: Display a recipe in a nicely formatted way. [Explore](.\Tailwind-CSS\recipe-page)
-- **Social Links Profile**: A profile card with social media links. [Explore](.\TailwindCSS\social-links-profile)
+<details>
+<summary>Click to expand</summary>
+
+- **Email Subscribe**: A simple email subscription form. [Explore](./TailwindCSS/email-subscribe)
+- **Fylo Landing Page**: A landing page for a fictional company. [Explore](./TailwindCSS/fylo-landing-page)
+- **Recipe Page**: Display a recipe in a nicely formatted way. [Explore](./Tailwind-CSS/recipe-page)
+- **Social Links Profile**: A profile card with social media links. [Explore](./TailwindCSS/social-links-profile)
+
+</details>
 
 ## [React Projects](./React/readme.md)
+
+<details>
+<summary>Click to expand</summary>
 
 - **[Pizza Menu](./React/pizza-menu)**: A dynamic pizza menu created with React.
 - **[Profile Card](./React/profile-card)**: A simple profile card implemented in React.
@@ -48,6 +61,8 @@ This repository is a collection of small to medium frontend projects organized b
 - **[Tip Calculator V2](./React/tip-calculator-v2)**: This was a practice project where we built a responsive navbar with a tip calculator v2.
 - **[Todo App](./React/todo-app)**: Yet another todo app but with a beautiful UI and also a theme switcher where you can change your theme to dark mode or light mode.
 - **[Travel List](./React/travel-list)**: Ever tried to make a list of things you want on a trip? Now with this application, you can simply add your items that you want to pack. You can update them and also delete them.
+
+</details>
 
 ## Technologies
 
